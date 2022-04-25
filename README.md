@@ -21,5 +21,6 @@
  - `php artisan migrate`
  - `php artisan db:seed`
  - `php artisan passport:client --personal`
+ - `php artisan passport:keys`
  
 
