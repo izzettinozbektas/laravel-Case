@@ -23,7 +23,7 @@ class LoginController extends Controller
     {
         $data = $request->all();
         $data['password'] = bcrypt($request->password);
-        $data['status'] = 0; // new create user status
+        $data['status'] = 1; // new create user status
         $user = User::create($data);
         return $this->login($request);
     }
