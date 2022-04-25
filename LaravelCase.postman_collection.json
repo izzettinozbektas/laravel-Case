@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "ab0cf26e-9f7c-4978-9018-3caf2fbdf701",
+		"name": "LaravelCase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dschneider@example.net",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8001/api/v1/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "site_url",
+							"value": "https://test.abc.com",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "default"
+						},
+						{
+							"key": "lastname",
+							"value": "test",
+							"type": "default"
+						},
+						{
+							"key": "company_name",
+							"value": "test",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkCompanyPackage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmU4N2NiODIwNGVlODUzODZkYTJhZWU4MTc5ZmRkZDc4NzgxYzQ0N2ExNDIyNWEzNDIwYTYyZDNiZGI3ODdmYmU0YmZjZWIzYzY2NjA0MGQiLCJpYXQiOjE2NTA4NDM2MDUuNDY3NDQ4LCJuYmYiOjE2NTA4NDM2MDUuNDY3NDUxLCJleHAiOjE2ODIzNzk2MDUuMzg4MzQ0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.bIvKGcG67_WNUf_hwqsueWF6tXpitl4NimdzUZVLePSm7BTyAR1I8tlocpsYlysqIROg5x5oARZ32uemwIu_k3R8jVGbitH5Y-UgoGl539cRwfQ44n33yTEywRnK5JI43vNFCu1W4q4-JzuMfdgH38aEY1BFSVTlhkGBDS7Gn4z9pjJi2VXfpsqt1dvGyE3SE-x_tWcdkwdC15lwwxJD3YGY24fYwY26-469lwG6vwp-xK2kSJRmakgwLOYN9dQYjZimcOESX2dcH4HMN2E2IYyXc77IfLoKGVEiWWPxgatC3KyBYO6b4Ne5xKOn70HHzy7vLtyR1kFFMimInSBwDD4oIRCW-wYBM0ZT27WOxy0XXs9hEH41k9aevJsCJriuqsxcM5FMRojFuXtPJuhYbsdjh05rIW9oYDJEK5SFLUsRuXXaJVuRszxSOdn9jh7aN17jK00SmTjDxndacUROyxu_SCCOncy8cwmEcwLqQuiUlWKXfqOwD8xMFrwvllqTK_F-czTg0M1o2oFO0lAVGwDMS4BXHU1AV3na0rKG4pUBd2mOpo4IH1VgEZkcDHLVBKnCV-AVoD2efVKzaGuGooMW5Uk6iireGZ7ZpO_Di3iMCZInMjxkgWqao9WPhlTFlcsR7lu2cOaf3Inzc2kZ9fk_Xq5KKcfepZYIlCYdieg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/api/v1/checkCompanyPackage",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"checkCompanyPackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQ4NTUwMGVhZTE2MDRhNjU3MzBhOGIxZWFiZDJjMDQ5NjRjYzBjODYxMTFjNzUyNjE1NmNlZjE3MWY5ZWQ1M2EyMWVjMjFkYzBhMTA5ZDciLCJpYXQiOjE2NTA4NDM2NjYuMDI3MzAzLCJuYmYiOjE2NTA4NDM2NjYuMDI3MzA2LCJleHAiOjE2ODIzNzk2NjUuOTc0NDY5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dESzwARgvhSIM6Ma4LNXR56_SxDj4IuNLN9FGiU8atTGZg_HQ_FBAy7mbH37bRsqw6KeCikyzx_1CFUTcQFU0QFFzTCkEU6Cfpg8B6eJ7FaGGWNozIqGwr4zzez1qo4u1sZkjhVhe3BuSfMtSUTN8t6IElAfIyWCrNakgzTJ0CHK8ZtsK7730wD4sWhDwfMmUNa8TDJbUnD58LBYT90QEsE8-XUwXGjr4LW-GGXYb3zN9P5BUjlCAKbdnkLUWDCptSHNAfsGLjqmcdpW-yRCAGAAUZffq5YDL3CgB_GVrPJyQL6PcnnbGM9oslQsa7jnan_64TApcWTXBZqOlq2bu8X5uf-N8m2YoYmcUMrliv6sOh-XvzKeyY-tr4WnzvGriA_jAbm5WZTqeqcmc9sGBvX0Arifp1qqJvCHI25turJnlzoWjKhPIjeodkJeyXnoYxx3XQ9h4Eb4APpS6CsWwZATPs6leji-qjA8jFR9RKgOCree8lC_QL7iCQMYTMz8j2R_CtT1HKPFeftRylwgjOcbSv6lB9hA_PwEc-6oftI_wrIZQH1PjxPjVwuZMwvhEsz2pyiHb3Lq7cxeEocpAKPeEgUwbNkEMBoiASyNGqJRRcK8x08IeVnXg0kD8Dp1V_1Pe2CyjOR6hlYoCHpq2porNVwDmh92nA4sb-Q3R3o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/api/v1/packets?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"packets"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"description": "pagination ile sayfalara bölerek data çekebilriiz örnek page=3 gb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companyPacketCreate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQ4NTUwMGVhZTE2MDRhNjU3MzBhOGIxZWFiZDJjMDQ5NjRjYzBjODYxMTFjNzUyNjE1NmNlZjE3MWY5ZWQ1M2EyMWVjMjFkYzBhMTA5ZDciLCJpYXQiOjE2NTA4NDM2NjYuMDI3MzAzLCJuYmYiOjE2NTA4NDM2NjYuMDI3MzA2LCJleHAiOjE2ODIzNzk2NjUuOTc0NDY5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dESzwARgvhSIM6Ma4LNXR56_SxDj4IuNLN9FGiU8atTGZg_HQ_FBAy7mbH37bRsqw6KeCikyzx_1CFUTcQFU0QFFzTCkEU6Cfpg8B6eJ7FaGGWNozIqGwr4zzez1qo4u1sZkjhVhe3BuSfMtSUTN8t6IElAfIyWCrNakgzTJ0CHK8ZtsK7730wD4sWhDwfMmUNa8TDJbUnD58LBYT90QEsE8-XUwXGjr4LW-GGXYb3zN9P5BUjlCAKbdnkLUWDCptSHNAfsGLjqmcdpW-yRCAGAAUZffq5YDL3CgB_GVrPJyQL6PcnnbGM9oslQsa7jnan_64TApcWTXBZqOlq2bu8X5uf-N8m2YoYmcUMrliv6sOh-XvzKeyY-tr4WnzvGriA_jAbm5WZTqeqcmc9sGBvX0Arifp1qqJvCHI25turJnlzoWjKhPIjeodkJeyXnoYxx3XQ9h4Eb4APpS6CsWwZATPs6leji-qjA8jFR9RKgOCree8lC_QL7iCQMYTMz8j2R_CtT1HKPFeftRylwgjOcbSv6lB9hA_PwEc-6oftI_wrIZQH1PjxPjVwuZMwvhEsz2pyiHb3Lq7cxeEocpAKPeEgUwbNkEMBoiASyNGqJRRcK8x08IeVnXg0kD8Dp1V_1Pe2CyjOR6hlYoCHpq2porNVwDmh92nA4sb-Q3R3o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "packet_id",
+							"value": "3",
+							"description": "tokenden company_id ulaştıgımız icin company_id yollamaya gerek yok ",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/v1/companyPacketCreate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"companyPacketCreate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
