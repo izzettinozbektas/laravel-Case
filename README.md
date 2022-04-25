@@ -2,7 +2,7 @@
 
  - Repoyu indir
  - Docker bilgisayarınızda olmalı
- - Proje dizininde  kurulum.sh çalıştır
+ - Proje dizininde  kurulum.sh (./kurulum.sh) çalıştır
  - Çıkan personel client seceneğini enter ile geçebiliriz
 
 > http://localhost:8001 den projeyi çalışır
