@@ -1,0 +1,11 @@
+Postman collactionu import edince tüm edpointler var.
+Seeder ile 3 user insert ediyorum phpmyadmin ile mailini alıp login endpointini kontrol edebilirsiniz yada register enpointinden direk register ve login olunabiliyor.
+Seeder ile oluşan kullanıcılara paketler atadım endpointlerden kontrol edebilirsiniz.
+
+Register den login olunur ise paket bilgilerini çekebilicemiz bir endpoint ile firmaya paket ataya bilirsiniz.
+
+Çalışma mantığı ben jobları test edebılmek ıcın her dakıka bası çalıştırdım. İki job kurguladım birisi ödeme kontrolu diğeride sistem üst üste üçkere
+ödeme çekememiş ise kullanıcıyı pasif yapan job. Joblarda chunk yapısını kullandım sısteme cok yuklenmesın dıye toplu update lerı parcalayıp update edıyorum.Listener
+örnegi olarakda yazılanı tam anlamadıgım ıcın login olmus kullanıcının tekrar logın oldugunda eskı tokenını gecersız kılan bir listener oluşturdum mantıgı aynı sonuçta.
+
+Herhanbir sorun olursa benimle iletişime geçebilirisiniz iyi günler iyi çalışmalar
